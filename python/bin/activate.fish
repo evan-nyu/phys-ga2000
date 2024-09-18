@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/evanarch/Documents/ Present /Computational Physics/python"
+set -gx VIRTUAL_ENV "/Users/evanarch/Documents/ Present /Computational Physics/phys-ga2000/python"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

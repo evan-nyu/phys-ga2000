@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/evanarch/Documents/ Present /Computational Physics/python/bin/python3.12" "$0" "$@"
+'''exec' "/Users/evanarch/Documents/ Present /Computational Physics/phys-ga2000/python/bin/python3.12" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

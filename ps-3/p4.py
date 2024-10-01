@@ -44,21 +44,31 @@ gaussian_ys = 1 / (sigma * np.sqrt(2 * np.pi)) * np.exp(-(gaussian_xs - 1)**2 / 
 #plot a gaussian and a histogram of ys
 plt.plot(gaussian_xs, gaussian_ys)
 plt.hist(ys, bins = 50, density = True)
+plt.xlabel("Value of Y")
+plt.ylabel("Normalized Number of Occurances")
 plt.show()
 
 #Plottoing for the stats stuff as a function of N
 figure, axis = plt.subplots(2, 2)
 axis[0, 0].plot(Ns, means)
 axis[0, 0].set_title("Mean")
+axis[0, 0].set_xlabel("N")
+axis[0, 0].set_ylabel("Mean")
 
 axis[0, 1].plot(Ns, variances)
 axis[0, 1].set_title("Variance")
+axis[0, 1].set_xlabel("N")
+axis[0, 1].set_ylabel("Variance")
 
 axis[1, 0].plot(Ns, skewnesses)
 axis[1, 0].set_title("Skewness")
+axis[1, 0].set_xlabel("N")
+axis[1, 0].set_ylabel("Skewness")
 
 axis[1, 1].plot(Ns, kurtosises)
 axis[1, 1].set_title("Kurtosis")
+axis[1, 1].set_xlabel("N")
+axis[1, 1].set_ylabel("Kurtosis")
 
 plt.show()
 

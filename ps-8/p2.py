@@ -19,6 +19,8 @@ def plotFFt(data, label):
     fft = np.fft.rfft(data)
     f = np.linspace(0, sample_rate/2, len(data)//2+1)
 
+    print(f"{label} Dominant Frequeny", f[np.argmax(fft)])
+
     plt.plot(f, fft*delta)
     plt.yscale('log')
     plt.xscale('log')

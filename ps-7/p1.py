@@ -26,7 +26,6 @@ def newton(r, m, tol = 0.01):
         return r
     else:
         return newton(r - f(r, m)/fp(r, m), m, tol)
-
 print("r' for Moon and Earth", np.format_float_scientific(r_moon * newton(0.001, m_moon/m_earth, 0.0001)))
 print("r' for Earth and Sun", np.format_float_scientific(r_earth * newton(0.001, m_earth/m_sun, 0.0001)))
 print("r' for Jupiter in Earth Orbit", np.format_float_scientific(r_earth * newton(0.001, m_jupiter/m_sun, 0.0001)))
